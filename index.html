@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Selamat Hari Raya Idul Fitri 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .morphing {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        .subtext {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .message {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            font-weight: bold;
+            max-width: 80%;
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: black;
+            font-size: 2rem;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="idul-fitri-lebaran-happy-eid-mubarak-ramadan-kareem-animation-with-mosque-silhouette-animation-muslim-animation-and-mosque-background-video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1 class="morphing">Selamat Hari Raya Idul Fitri 2025🕌🕋</h1>
+        <p class="subtext">Mohon Maaf Lahir dan Batin😇🙏</p>
+        <p class="message">Sepatah kata Dari Programmer Web: Kami segenap programmer|Desain Web|Desain UI/UX Backend|Perancangan Web Berbasis (Ai)|Mengucapkan Minal Aidin walfa idzin Mohon Maaf Lahir Batin 😇🙏
+            Semoga kebahagiaan dan berkah selalu menyertai Anda Dan keluarga!</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    <script>
+        gsap.to(".morphing", {
+            duration: 2,
+            scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        });
+    </script>
+</body>
+</html>
